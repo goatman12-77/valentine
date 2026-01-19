@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="hearts"></div>
+<div class="confetti-container"></div>
+
+<div class="page active" id="page1">
+  <h1>okay so like i made another website</h1>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+<div class="page" id="page2">
+  <h1>My favourite memories of us</h1>
+  <div class="photo-stack">
+  <img src="photo1.jpg" class="left" />
+  <img src="photo2.jpg" class="center" />
+  <img src="photo3.jpg" class="right" />
+</div>
+
+  <p>Every moment with you is my favourite, can't pick one .</p>
+  <button onclick="nextPage()">Next </button>
+</div>
+
+<div class="page" id="page3">
+  <h1>Reasons I love you(part 2)</h1>
+  <div class="reasons">
+    <div onclick="reveal(this)">your pretty ass eyes(cant leave it out)</div>
+    <div onclick="reveal(this)">youre so kind to everyone its crazy</div>
+    <div onclick="reveal(this)">being w you is literally the most comforting thing ever</div>
+    <div onclick="reveal(this)">literally everything about you ur perfect</div>
+  </div>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+<div class="page" id="page4">
+  <h1>Will You Be My Valentine?</h1>
+  <button class="yes" onclick="celebrate()">YES </button>
+  <button class="yes" onclick="celebrate()">yes but lowercase</button>
+  <p id="celebrateText"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
